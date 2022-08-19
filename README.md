@@ -1,22 +1,6 @@
 [![Auth0 Training](https://user-images.githubusercontent.com/73120/125103885-a2bb5d80-e091-11eb-8084-383003f1e484.png "Auth0 Training")](https://training.auth0.com)
 
-# SCORM Package Adapt Template
-
-An auth0 SCORM package template using the [Adapt Framework](https://github.com/adaptlearning/adapt_framework).
-
-## Using this template
-
-This is a template repository for an Adapt Framework based project to produce SCORM packages. Click the **Use this template** button at the top of the page to create a new repository using the template.
-
-Please name the new repository using the following format:
-
-```
-scorm-packages-adapt-name-of-your-package
-```
-
-Your new repository will be setup to use the standard [training theme](https://github.com/auth0-training/themes-adapt-auth0-training) and generate a SCORM package on commit to the main branch.
-
-Please update the content of your new repository to remove references to the template including removing this section of the readme.
+# SCORM Package Adapt ID Basics 1
 
 ### Requirements
 
@@ -44,7 +28,7 @@ To get started using this lab, ensure you have met the minimum [requirements](#r
 1. Clone this repository to your local machine.
 
 ```bash
-git clone https://github.com/auth0-training/scorm-packages-adapt-template.git
+git clone https://github.com/auth0-training/scorm-packages-adapt-idbasics-1.git
 ```
 
 2. Start Docker Desktop.
@@ -60,9 +44,9 @@ To get started using this lab, ensure you have met the minimum [requirements](#r
 
 1. Clone this repository to your local machine.
    ```bash
-   git clone https://github.com/auth0-training/scorm-packages-adapt-template.git
+   git clone https://github.com/auth0-training/scorm-packages-adapt-idbasics-1.git
    ```
-1. Change directories to the cloned repository, `cd scorm-packages-adapt-template`.
+1. Change directories to the cloned repository, `cd scorm-packages-adapt-idbasics-1`.
 1. Run the **init** script, `npm run local:init`.
 1. Run the **dev** process, `grunt dev`.
 1. Run the **serve** process, `grunt server`.

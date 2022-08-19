@@ -31,16 +31,5 @@
         "body": "",
         "instruction": "",
         "_trackingId": 2
-    },
-    {
-        "_id": "b-04",
-        "_parentId": "a-01",
-        "_type": "block",
-        "_classes": "",
-        "title": "b-04",
-        "displayTitle": "",
-        "body": "",
-        "instruction": "",
-        "_trackingId": 3
     }
 ]

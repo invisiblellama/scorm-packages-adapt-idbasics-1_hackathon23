@@ -3,12 +3,16 @@
         "_id": "c-01",
         "_parentId": "b-01",
         "_type": "component",
-        "_component": "text",
+        "_component": "graphic",
         "_classes": "",
-        "_layout": "full",
-        "title": "Video Name",
-        "displayTitle": "Video Name",
-        "body": "<iframe style='height:500px; width:100%' allowfullscreen src='https://share.descript.com/embed/AXqyI3CxxJH'></iframe>",
+        "_layout": "left",
+        "_graphic": {
+            "src": "course/en/images/travel1.jpg",
+            "alt": "Airplane on tarmac"
+        },
+        "title": "Identity Case Study",
+        "displayTitle": "Identity Case Study",
+        "body": "",
         "instruction": "",
         "_pageLevelProgress": {
             "_isEnabled": true,
@@ -17,14 +21,14 @@
     },
     {
         "_id": "c-02",
-        "_parentId": "b-02",
+        "_parentId": "b-01",
         "_type": "component",
         "_component": "text",
         "_classes": "",
-        "_layout": "full",
-        "title": "Text",
-        "displayTitle": "Text",
-        "body": "<p>To ensure that your <a target='_blank' href='https://auth0.com/docs/get-started/auth0-overview/create-tenants/child-tenants'>tenants are all associated with your Auth0 contractual agreement</a> and have the same features, ensure all your tenants are associated with your company account. If you have individual developers that want to create their own sandboxes for testing, make sure they get associated with your account so they have the same permissions too. To do this you should contact your Auth0 representative or the <a target='_blank' href='https://support.auth0.com/'>Auth0 Support Center.</a></p>",
+        "_layout": "right",
+        "title": "Identity Case Study",
+        "displayTitle": "Travel0",
+        "body": "Travel0 is a company that allows customers to book travel experiences. They would like customers to be able to create accounts so that they can easily check out with saved information. Their primary goal is to implement a seamless signup and login experience in order to minimize friction. In addition, they would like to source customer identities from multiple providers including social login via Google and Facebook. That way, their customers can easily use an existing account instead of the hassle of creating a new one just for their site. Finally, they want enhanced security with multi-factor authentication and attack protection.",
         "instruction": "",
         "_pageLevelProgress": {
             "_isEnabled": true,
@@ -33,40 +37,15 @@
     },
     {
         "_id": "c-03",
-        "_parentId": "b-03",
+        "_parentId": "b-02",
         "_type": "component",
-        "_component": "mcq",
+        "_component": "text",
         "_classes": "",
         "_layout": "full",
-        "_attempts": 99,
-        "_questionWeight": 1,
-        "_canShowModelAnswer": true,
-        "_shouldDisplayAttempts": false,
-        "_isRandom": false,
-        "_selectable": 1,
-        "_recordinteraction": false,
-        "_isOptional": true,
-        "title": "Check Your Knowledge",
-        "displayTitle": "Check Your Knowledge",
-        "body": "<p>Check your knowledge question</p>",
-        "instruction": "Choose the best answer and select Submit.",
-        "_items": [
-            {
-                "text": "Answer 1",
-                "_shouldBeSelected": false
-            },
-            {
-                "text": "Answer 2",
-                "_shouldBeSelected": true
-            }
-        ],
-        "_feedback": {
-            "title": "Feedback",
-            "correct": "<strong>Correct!</strong> ",
-            "_incorrect": {
-                "final": "<strong>Whoops!</strong> "
-            }
-        },
+        "title": "What Is Identity?",
+        "displayTitle": "What Is Identity?",
+        "body": "<p>The most basic identity scenario is when a <b>user</b>, who could be a human or a digital entity, wants to access a <b>resource</b> of some kind.</p><img src='course/en/images/useraccessresource.png' alt='User icon, arrow icon, and resource icon in a row, indicating user accessing resource'><p>A <b>digital identity</b> is the set of attributes that define a user in the context of a specific application. <b>Authentication</b> is the process of the person (or machine) proving they are who they say they are. One typical example of authentication is using a username and password to log in to a website.</p><p><b>CIAM</b> stands for Customer Identity and Access Management, the application of digital identity to business use-cases. Travel0 needs a CIAM solution in order to maintain the information they need about their customers securely while at the same time allowing their customers to access their own information and data through their web app.</p>",
+        "instruction": "",
         "_pageLevelProgress": {
             "_isEnabled": true,
             "_isCompletionIndicatorEnabled": false
@@ -74,18 +53,54 @@
     },
     {
         "_id": "c-04",
-        "_parentId": "b-04",
+        "_parentId": "b-03",
         "_type": "component",
-        "_component": "text",
-        "_classes": "conclusion",
+        "_component": "accordion",
+        "_classes": "",
         "_layout": "full",
-        "title": "Conclusion",
-        "displayTitle": "",
-        "body": "With a basic understanding of this topic, you're ready to move on. To exit, click the X in the upper right.",
-        "instruction": "",
+        "title": "Accordion",
+        "displayTitle": "Examples of Digital Identities",
+        "body": "Digital identity is not a one-size-fits-all proposition. Depending on the use-case, a digital identity may be comprised of different attributes.",
+        "instruction": "Click the tabs below to learn about different forms of digital identity.",
+        "_shouldCollapseItems": true,
+        "_shouldExpandFirstItem": false,
+        "_comment": "setCompletionOn = inview | allItems",
+        "_setCompletionOn": "allItems",
+        "_items": [
+            {
+              "title": "Travel0",
+              "body": "<p>A customer's identity consists of the following pieces of information: <ul><li>Name</li><li>Email</li><li>Credit card number</li><li>Billing address</li></ul></p>",
+              "_graphic": {
+                  "src": "course/en/images/map_indigo.png",
+                  "alt": "Indigo map icon",
+                  "attribution": ""
+              },
+              "_comment": "Supported classes = 'align-image-left' | 'align-image-right'. Additional classes can be used but they must be predefined in one of the Less files",
+              "_classes": "align-image-right"
+            },
+            {
+              "title": "Department of Motor Vehicles",
+              "body": "<p>A customer's digital identity in a given state may include:<ul><li>Resident's name</li><li>Home address</li><li>Driver's license number</li><li>Government identity number</li></ul></p>",
+              "_graphic": {
+                  "src": "course/en/images/credential-user_indigo.png",
+                  "alt": "Indigo map icon",
+                  "attribution": ""
+              },
+              "_classes": "align-image-left"
+            },
+            {
+              "title": "Medical Office",
+              "body": "<p>A customer's digital identity consists of:<ul><li>Name</li><li>Date of birth</li><li>Patient's unique ID number</li><li>Insurance information</li><li>And any other relevant information</li></ul></p>",
+              "_graphic": {
+                  "src": "course/en/images/briefcase_indigo.png",
+                  "alt": "Indigo truck icon",
+                  "attribution": ""
+              },
+              "_classes": "align-image-right"
+            }
+        ],
         "_pageLevelProgress": {
-            "_isEnabled": true,
-            "_isCompletionIndicatorEnabled": false
+            "_isEnabled": true
         }
     }
 ]
