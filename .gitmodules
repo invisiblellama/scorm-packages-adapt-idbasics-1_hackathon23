@@ -1,0 +1,10 @@
+[submodule "src/core"]
+	path = src/core
+	branch = master
+	url = https://github.com/adaptlearning/adapt-contrib-core
+ 	installBranch = v6.5.0
+[submodule "src/theme/adapt-auth0-training-theme"]
+	path = src/theme/adapt-auth0-training-theme
+	branch = main
+	url = https://github.com/auth0-training/themes-adapt-auth0-training.git
+

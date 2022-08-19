@@ -1,0 +1,6 @@
+# Ignore library files.
+/src/core/libraries/*.js
+
+# Ignore built output.
+/grunt/
+/build/

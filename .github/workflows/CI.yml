@@ -1,0 +1,40 @@
+name: CI
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+  release:
+    types:
+    - created
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout Source
+      uses: actions/checkout@v3
+    - name: Checkout submodules using a PAT
+      run: |
+        git config --file .gitmodules --get-regexp url | while read url; do
+          git config --file=.gitmodules $(echo "$url" | sed -E "s/git@github.com:|https:\/\/github.com\//https:\/\/${{ secrets.THEMES_ADAPT_TEMPLATE_PAT }}:${{ secrets.THEMES_ADAPT_TEMPLATE_PAT }}@github.com\//")
+        done
+        git submodule sync
+        git submodule update --init --recursive
+    - name: Install Node
+      uses: actions/setup-node@v2
+      with:
+        node-version: '16'
+    - name: Install Global Dependencies
+      run: npm install -g adapt-cli grunt-cli
+    - name: Initialize Project
+      run: npm run local:init
+    - name: Run Build
+      run: grunt build
+    
+    - name: Upload Artifact
+      uses: actions/upload-artifact@v3
+      with:
+        name: scorm-packages-adapt-template
+        path: build/*

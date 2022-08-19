@@ -1,0 +1,91 @@
+[
+    {
+        "_id": "c-01",
+        "_parentId": "b-01",
+        "_type": "component",
+        "_component": "text",
+        "_classes": "",
+        "_layout": "full",
+        "title": "Video Name",
+        "displayTitle": "Video Name",
+        "body": "<iframe style='height:500px; width:100%' allowfullscreen src='https://share.descript.com/embed/AXqyI3CxxJH'></iframe>",
+        "instruction": "",
+        "_pageLevelProgress": {
+            "_isEnabled": true,
+            "_isCompletionIndicatorEnabled": false
+        }
+    },
+    {
+        "_id": "c-02",
+        "_parentId": "b-02",
+        "_type": "component",
+        "_component": "text",
+        "_classes": "",
+        "_layout": "full",
+        "title": "Text",
+        "displayTitle": "Text",
+        "body": "<p>To ensure that your <a target='_blank' href='https://auth0.com/docs/get-started/auth0-overview/create-tenants/child-tenants'>tenants are all associated with your Auth0 contractual agreement</a> and have the same features, ensure all your tenants are associated with your company account. If you have individual developers that want to create their own sandboxes for testing, make sure they get associated with your account so they have the same permissions too. To do this you should contact your Auth0 representative or the <a target='_blank' href='https://support.auth0.com/'>Auth0 Support Center.</a></p>",
+        "instruction": "",
+        "_pageLevelProgress": {
+            "_isEnabled": true,
+            "_isCompletionIndicatorEnabled": false
+        }
+    },
+    {
+        "_id": "c-03",
+        "_parentId": "b-03",
+        "_type": "component",
+        "_component": "mcq",
+        "_classes": "",
+        "_layout": "full",
+        "_attempts": 99,
+        "_questionWeight": 1,
+        "_canShowModelAnswer": true,
+        "_shouldDisplayAttempts": false,
+        "_isRandom": false,
+        "_selectable": 1,
+        "_recordinteraction": false,
+        "_isOptional": true,
+        "title": "Check Your Knowledge",
+        "displayTitle": "Check Your Knowledge",
+        "body": "<p>Check your knowledge question</p>",
+        "instruction": "Choose the best answer and select Submit.",
+        "_items": [
+            {
+                "text": "Answer 1",
+                "_shouldBeSelected": false
+            },
+            {
+                "text": "Answer 2",
+                "_shouldBeSelected": true
+            }
+        ],
+        "_feedback": {
+            "title": "Feedback",
+            "correct": "<strong>Correct!</strong> ",
+            "_incorrect": {
+                "final": "<strong>Whoops!</strong> "
+            }
+        },
+        "_pageLevelProgress": {
+            "_isEnabled": true,
+            "_isCompletionIndicatorEnabled": false
+        }
+    },
+    {
+        "_id": "c-04",
+        "_parentId": "b-04",
+        "_type": "component",
+        "_component": "text",
+        "_classes": "conclusion",
+        "_layout": "full",
+        "title": "Conclusion",
+        "displayTitle": "",
+        "body": "With a basic understanding of this topic, you're ready to move on. To exit, click the X in the upper right.",
+        "instruction": "",
+        "_pageLevelProgress": {
+            "_isEnabled": true,
+            "_isCompletionIndicatorEnabled": false
+        }
+    }
+]

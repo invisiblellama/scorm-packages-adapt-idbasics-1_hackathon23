@@ -1,0 +1,23 @@
+[
+    {
+        "_id": "co-01",
+        "_parentId": "course",
+        "_type": "page",
+        "_classes": "",
+        "_htmlClasses": "",
+        "title": "Course Name",
+        "displayTitle": "Course Name",
+        "body": "Course Description",
+        "pageBody": "Course Description",
+        "instruction": "",
+        "_graphic": { },
+        "linkText": "View",
+        "duration": "2 mins",
+        "_pageLevelProgress": {
+            "_isEnabled": true,
+            "_showPageCompletion": false,
+            "_excludeAssessments": false,
+            "_isCompletionIndicatorEnabled": false
+        }
+    }
+]

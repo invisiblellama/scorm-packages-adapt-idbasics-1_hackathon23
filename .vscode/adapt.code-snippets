@@ -1,0 +1,177 @@
+{
+  // Place your scorm-packages-adapt-template workspace snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and
+  // description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope
+  // is left empty or omitted, the snippet gets applied to all languages. The prefix is what is
+  // used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+  // $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders.
+  // Placeholders with the same ids are connected.
+  // Example:
+  "New Block": {
+    "scope": "json",
+    "prefix": "block",
+    "body": [
+      ",",
+      "{",
+      "\"_id\": \"b-$1\",",
+      "\"_parentId\": \"a-01\",",
+      "\"_type\": \"block\",",
+      "\"_classes\": \"\",",
+      "\"title\": \"b-$1\",",
+      "\"displayTitle\": \"\",",
+      "\"body\": \"\",",
+      "\"instruction\": \"\",",
+      "\"_trackingId\": $2",
+      "}$0"
+    ],
+    "description": "Create a new block"
+  },
+  "New Video": {
+    "scope": "json",
+    "prefix": "video",
+    "body": [
+      ",{",
+      "\"_id\": \"c-01\",",
+      "\"_parentId\": \"b-01\",",
+      "\"_type\": \"component\",",
+      "\"_component\": \"text\",",
+      "\"_classes\": \"\",",
+      "\"_layout\": \"full\",",
+      "\"title\": \"Video Name\",",
+      "\"displayTitle\": \"Video Name\",",
+      "\"body\": \"<iframe style='height:500px; width:100%' allowfullscreen src='https://share.descript.com/embed/AXqyI3CxxJH'></iframe>\",",
+      "\"instruction\": \"\",",
+      "\"_pageLevelProgress\": {",
+      "\"_isEnabled\": true,",
+      "\"_isCompletionIndicatorEnabled\": false",
+      "}"
+    ]
+  },
+  "New Graphic": {
+    "scope": "json",
+    "prefix": "graphic",
+    "body": [
+      ",{",
+      "\"_id\": \"c-05\",",
+      "\"_parentId\": \"b-05\",",
+      "\"_type\": \"component\",",
+      "\"_component\": \"graphic\",",
+      "\"_classes\": \"\",",
+      "\"_layout\": \"left\",",
+      "\"title\": \"Here is a graphic object\",",
+      "\"displayTitle\": \"Here is a graphic object\",",
+      "\"body\": \"Hi everybody!\",",
+      "\"instruction\": \"\",",
+      "\"_graphic\": {",
+      "\"alt\": \"\",",
+      "\"large\": \"https://github.com/adaptlearning/documentation/raw/master/04_wiki_assets/adapt_framework/adapt-logo_208x200.gif\",",
+      "\"small\": \"http://minionslovebananas.com/images/check-in-minion.jpg\",",
+      "\"attribution\": \"Copyright © 2019\",",
+      "\"_url\": \"\",",
+      "\"_target\": \"\"",
+      "},",
+      "\"_pageLevelProgress\": {",
+      "\"_isEnabled\": true",
+      "}",
+      "}"
+    ]
+  },
+  "New Text": {
+    "scope": "json",
+    "prefix": "text",
+    "body": [
+      ",{",
+      "\"_id\": \"c-02\",",
+      "\"_parentId\": \"b-02\",",
+      "\"_type\": \"component\",",
+      "\"_component\": \"text\",",
+      "\"_classes\": \"\",",
+      "\"_layout\": \"full\",",
+      "\"title\": \"Text\",",
+      "\"displayTitle\": \"Text\",",
+      "\"body\": \"<p>To ensure that your <a target='_blank' href='https://auth0.com/docs/get-started/auth0-overview/create-tenants/child-tenants'>tenants are all associated with your Auth0 contractual agreement</a> and have the same features, ensure all your tenants are associated with your company account. If you have individual developers that want to create their own sandboxes for testing, make sure they get associated with your account so they have the same permissions too. To do this you should contact your Auth0 representative or the <a target='_blank' href='https://support.auth0.com/'>Auth0 Support Center.</a></p>\",",
+      "\"instruction\": \"\",",
+      "\"_pageLevelProgress\": {",
+      "\"_isEnabled\": true,",
+      "\"_isCompletionIndicatorEnabled\": false",
+      "}",
+      "}"
+    ]
+  },
+  "New Conclusion": {
+    "scope": "json",
+    "prefix": "conclusion",
+    "body": [
+      ",{",
+      "\"_id\": \"c-04\",",
+      "\"_parentId\": \"b-04\",",
+      "\"_type\": \"component\",",
+      "\"_component\": \"text\",",
+      "\"_classes\": \"conclusion\",",
+      "\"_layout\": \"full\",",
+      "\"title\": \"Conclusion\",",
+      "\"displayTitle\": \"\",",
+      "\"body\": \"With a basic understanding of this topic, you're ready to move on.\",",
+      "\"instruction\": \"\",",
+      "\"_pageLevelProgress\": {",
+      "\"_isEnabled\": true,",
+      "\"_isCompletionIndicatorEnabled\": false",
+      "}",
+      "}"
+    ]
+  },
+	"New Question": {
+		"scope": "json",
+		"prefix": "question",
+		"body":[
+			",{",
+        "\"_id\": \"c-03\",",
+        "\"_parentId\": \"b-03\",",
+        "\"_type\": \"component\",",
+        "\"_component\": \"mcq\",",
+        "\"_classes\": \"\",",
+        "\"_layout\": \"full\",",
+        "\"_attempts\": 99,",
+        "\"_questionWeight\": 1,",
+        "\"_canShowModelAnswer\": true,",
+        "\"_shouldDisplayAttempts\": false,",
+        "\"_isRandom\": false,",
+        "\"_selectable\": 1,",
+        "\"_recordinteraction\": false,",
+        "\"_isOptional\": true,",
+        "\"title\": \"Check Your Knowledge\",",
+        "\"displayTitle\": \"Check Your Knowledge\",",
+        "\"body\": \"<p>Check your knowledge question</p>\",",
+        "\"instruction\": \"Choose the best answer and select Submit.\",",
+        "\"_items\": [",
+            "{",
+                "\"text\": \"Answer 1\",",
+                "\"_shouldBeSelected\": false",
+            "},",
+						"{",
+                "\"text\": \"Answer 2\",",
+                "\"_shouldBeSelected\": false",
+            "},",
+						"{",
+                "\"text\": \"Answer 3\",",
+                "\"_shouldBeSelected\": false",
+            "},",
+            "{",
+                "\"text\": \"Answer 4\",",
+                "\"_shouldBeSelected\": true",
+            "}",
+        "],",
+        "\"_feedback\": {",
+            "\"title\": \"Feedback\",",
+            "\"correct\": \"<strong>Correct!</strong> \",",
+            "\"_incorrect\": {",
+                "\"final\": \"<strong>Whoops!</strong> \"",
+            "}",
+        "},",
+        "\"_pageLevelProgress\": {",
+            "\"_isEnabled\": true,",
+            "\"_isCompletionIndicatorEnabled\": false",
+        "}",
+    "}"
+		]
+	}
+}
