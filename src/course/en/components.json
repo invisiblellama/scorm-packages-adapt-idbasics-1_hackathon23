@@ -44,7 +44,7 @@
         "_layout": "full",
         "title": "What Is Identity?",
         "displayTitle": "What Is Identity?",
-        "body": "<p>The most basic identity scenario is when a <b>user</b>, who could be a human or a digital entity, wants to access a <b>resource</b> of some kind.</p><img src='course/en/images/useraccessresource.png' alt='User icon, arrow icon, and resource icon in a row, indicating user accessing resource'><p>A <b>digital identity</b> is the set of attributes that define a user in the context of a specific application. <b>Authentication</b> is the process of the person (or machine) proving they are who they say they are. One typical example of authentication is using a username and password to log in to a website.</p><p><b>CIAM</b> stands for Customer Identity and Access Management, the application of digital identity to business use-cases. Travel0 needs a CIAM solution in order to maintain the information they need about their customers securely while at the same time allowing their customers to access their own information and data through their web app.</p>",
+        "body": "<p>The most basic identity scenario is when a <b>user</b>, who could be a human or a digital entity, wants to access a <b>resource</b> of some kind.</p><img src='course/en/images/useraccessresource.png' alt='User icon, arrow icon, and resource icon in a row, indicating user accessing resource'><p>A <b>digital identity</b> is the set of attributes that define a user in the context of a specific application. <b>Authentication</b> is the process of the person (or machine) proving they are who they say they are. One typical example of authentication is using a username and password to log in to a website.</p><p><b>CIAM</b> stands for Customer Identity and Access Management, the application of digital identity to business use cases. Travel0 needs a CIAM solution in order to maintain the information they need about their customers securely while at the same time allowing their customers to access their own information and data through their web app.</p>",
         "instruction": "",
         "_pageLevelProgress": {
             "_isEnabled": true,
@@ -60,7 +60,7 @@
         "_layout": "full",
         "title": "Accordion",
         "displayTitle": "Examples of Digital Identities",
-        "body": "Digital identity is not a one-size-fits-all proposition. Depending on the use-case, a digital identity may be comprised of different attributes.",
+        "body": "Digital identity is not a one-size-fits-all proposition. Depending on the use case, a digital identity may be comprised of different attributes.",
         "instruction": "Click the tabs below to learn about different forms of digital identity.",
         "_shouldCollapseItems": true,
         "_shouldExpandFirstItem": false,
@@ -101,6 +101,189 @@
         ],
         "_pageLevelProgress": {
             "_isEnabled": true
+        }
+    }, 
+    {
+        "_id": "c-05",
+        "_parentId": "b-04",
+        "_type": "component",
+        "_component": "narrative",
+        "_classes": "",
+        "_layout": "full",
+        "title": "Auth0 and Identity",
+        "displayTitle": "Auth0 and Identity",
+        "body": "In this section, you will learn more about the complexities of identity, the open standards used in the identity sphere, and Auth0's role as an identity solution.",
+        "instruction": "Select the forward arrows to move through the narrative on a desktop, or swipe the images and select the plus icons to do so on mobile.",
+        "mobileInstruction": "This is optional instruction text that will be shown when viewed on mobile.",
+        "_hasNavigationInTextArea": false,
+        "_comment": "setCompletionOn = inview | allItems",
+        "_setCompletionOn": "allItems",
+        "_isTextBelowImage": false,
+        "_isMobileTextBelowImage": false,
+        "_items": [
+            {
+                "title": "Why Is Identity Important?",
+                "body": "<p>Identity is important because it is at the core of most transactions handled online. It cuts across all layers of a business, and if something goes wrong, it could be catastrophic. In addition, it's an essential function that users have come to expect in an online experience. If they can't easily log in, they may immediately opt for a competitor without even considering your product.</p>",
+                "_graphic": {
+                    "src": "course/en/images/identity-important.png",
+                    "alt": "Auth0's Universal Login box on mobile phone",
+                    "attribution": ""
+                },
+                "strapline": "Narrative item 1 strapline"
+            },
+            {
+                "title": "Why Is Identity Challenging?",
+                "body": "<p>Many different factors come into play when building an application. There are different types of resources that are exposed in different ways, and different languages and frameworks used to connect websites and apps to various APIs. From a developer's perspective, this is a huge amount of work. Minor differences in the development stack could lead to huge differences in the code you have to write.</p><p>In addition, there are lots of different forms that digital identities can take, and each identity may have different attributes associated with it.</p><p>Finally, there is the security aspect of customer identity. <b>Bad actors</b> may try to gain valuable identity information about a user. From a business perspective, maintaining customer <b>trust</b> is of utmost importance to the relationship with the customer. Without trust, they may choose not to move forward with any aspect of the business.</p>",
+                "_graphic": {
+                    "src": "course/en/images/identity-challenging.jpg",
+                    "alt": "People working on computers in open concept office",
+                    "attribution": ""
+                },
+                "strapline": "Narrative item 2 strapline"
+            },
+            {
+                "title": "Auth0 and Open Standards",
+                "body": "<p>Auth0 is implemented using <b>open standards</b>. These are agreements, developed in collaboration with major players in the industry, which may be freely implemented by anyone. Using common specifications means that developers can build compatible software. In addition, choosing a vendor does not lock you in to using that vendor forever–you could choose to implement the spec yourself or move to an alternate vendor at any time.</p><p>The most common <b>protocols</b> you will hear about in the customer identity space are <b>OpenID Connect</b> and <b>OAuth 2.0</b>. OpenID Connect, or OIDC, is used for signing in. It covers application authentication scenarios. OAuth 2.0 is used for authorization, specifically authorizing calls to an API on behalf of a given user.</p><p>These protocols both use tokens which may be defined by the <b>JSON Web Token</b>, or <b>JWT</b> (pronounced \"jot\"), specification. Auth0's implementation uses this format for all tokens, though it is not an OAuth requirement for access tokens.</p><p>You may also hear about <b>SAML</b>. This is a somewhat older open standard used for Single Sign On across domains. Auth0 supports SAML and allows your application to connect to SAML identity providers.</p>",
+                "_graphic": {
+                    "src": "course/en/images/protocols.jpg",
+                    "alt": "Laptop computer displaying code",
+                    "attribution": ""
+                },
+                "strapline": "Narrative item 3 strapline"
+            }, 
+            {
+                "title": "Why Choose Auth0 as an Identity Solution?",
+                "body": "<p>The open standards are long, dense, and highly technical. Auth0 abstracts away complexity so that developers can confidently implement an identity solution quickly and easily. Auth0's SDKs and APIs work with any application type, from native apps to web apps to backend services. Developers integrate their applications with Auth0, and then Auth0 handles the connection with identity providers for them, simplifying the development work necessary to launch an identity solution.</p><p>From the end user's perspective, Auth0 offers a consistent, easy-to-use interface with Universal Login. This customizable login box is simple and secure. It's easy to implement with your company's colors and logo, as well as different login options including username and password or your chosen identity providers such as Google or Facebook. Behind the scenes, product features can be enabled just by toggling a switch to provide attack protection and multi-factor authentication.</p>",
+                "_graphic": {
+                    "src": "course/en/images/auth0-homepage.png",
+                    "alt": "Auth0 homepage displayed on a screen",
+                    "attribution": ""
+                },
+                "strapline": "Narrative item 4 strapline"
+            }
+        ],
+        "_pageLevelProgress": {
+            "_isEnabled": true
+        }
+    }, 
+    {
+        "_id": "c-06",
+        "_parentId": "b-05",
+        "_type": "component",
+        "_component": "graphic",
+        "_classes": "",
+        "_layout": "right",
+        "_graphic": {
+            "src": "course/en/images/identity-solution.png",
+            "alt": "Woman using mobile phone next to train"
+        },
+        "title": "Travel0's Identity Solution",
+        "displayTitle": "",
+        "body": "",
+        "instruction": "",
+        "_pageLevelProgress": {
+            "_isEnabled": true,
+            "_isCompletionIndicatorEnabled": false
+        }
+    },
+    {
+        "_id": "c-07",
+        "_parentId": "b-05",
+        "_type": "component",
+        "_component": "text",
+        "_classes": "",
+        "_layout": "left",
+        "title": "Travel0's Identity Solution",
+        "displayTitle": "Travel0's Identity Solution",
+        "body": "<p>Travel0 weighed the costs of implementing their own identity solution including development time, maintenance, and security risks against the ease of use and confidence provided by Auth0. Ultimately, they decided that Auth0 provided exactly what they needed to provide their customers with the best authentication experience. Their developers were happy with the functionality and product features provided. As a result, they had more time to devote to core business logic and developing new features.</p>",
+        "instruction": "",
+        "_pageLevelProgress": {
+            "_isEnabled": true,
+            "_isCompletionIndicatorEnabled": false
+        }
+    }, {
+        "_id": "c-08",
+        "_parentId": "b-06",
+        "_type": "component",
+        "_component": "mcq",
+        "_classes": "",
+        "_layout": "full",
+        "_attempts": 99,
+        "_questionWeight": 1,
+        "_canShowModelAnswer": true,
+        "_shouldDisplayAttempts": false,
+        "_isRandom": false,
+        "_selectable": 1,
+        "_recordinteraction": false,
+        "_isOptional": true,
+        "title": "Check Your Knowledge",
+        "displayTitle": "Check Your Knowledge",
+        "body": "<p>What does CIAM stand for?</p>",
+        "instruction": "Choose the best answer and select Submit.",
+        "_items": [
+            {
+                "text": "Customer Identity and Access Management",
+                "_shouldBeSelected": true
+            },
+            {
+                "text": "Consumer Information and Analytics Management",
+                "_shouldBeSelected": false
+            }
+        ],
+        "_feedback": {
+            "title": "Feedback",
+            "correct": "<strong>Correct! CIAM stands for customer identity and access management.</strong> ",
+            "_incorrect": {
+                "final": "<strong>Incorrect, CIAM stands for Customer Identity and Access Management</strong> "
+            }
+        },
+        "_pageLevelProgress": {
+            "_isEnabled": true,
+            "_isCompletionIndicatorEnabled": false
+        }
+    }, {
+        "_id": "c-09",
+        "_parentId": "b-07",
+        "_type": "component",
+        "_component": "mcq",
+        "_classes": "",
+        "_layout": "full",
+        "_attempts": 99,
+        "_questionWeight": 1,
+        "_canShowModelAnswer": true,
+        "_shouldDisplayAttempts": false,
+        "_isRandom": false,
+        "_selectable": 1,
+        "_recordinteraction": false,
+        "_isOptional": true,
+        "title": "Check Your Knowledge",
+        "displayTitle": "Check Your Knowledge",
+        "body": "<p>Which protocol primarily deals with authentication, or signing in?</p>",
+        "instruction": "Choose the best answer and select Submit.",
+        "_items": [
+            {
+                "text": "OAuth 2.0",
+                "_shouldBeSelected": false
+            },
+            {
+                "text": "OIDC",
+                "_shouldBeSelected": true
+            }, 
+            {
+                "text": "JWT",
+                "_shouldBeSelected": false
+            }
+        ],
+        "_feedback": {
+            "title": "Feedback",
+            "correct": "<strong>Correct! OIDC deals with authentication.</strong> ",
+            "_incorrect": {
+                "final": "<strong>Incorrect, that spec is not primarily used for authentication.</strong> "
+            }
+        },
+        "_pageLevelProgress": {
+            "_isEnabled": true,
+            "_isCompletionIndicatorEnabled": false
         }
     }
 ]
