@@ -236,5 +236,21 @@
             "_isEnabled": true,
             "_isCompletionIndicatorEnabled": false
         }
+    }, 
+    {
+        "_id": "c-10",
+        "_parentId": "b-08",
+        "_type": "component",
+        "_component": "text",
+        "_classes": "conclusion",
+        "_layout": "full",
+        "title": "Conclusion",
+        "displayTitle": "",
+        "body": "With a basic understanding of this topic, you're ready to move on. <br><br>Click the X or Done button to continue.",
+        "instruction": "",
+        "_pageLevelProgress": {
+            "_isEnabled": true,
+            "_isCompletionIndicatorEnabled": false
+        }
     }
 ]
