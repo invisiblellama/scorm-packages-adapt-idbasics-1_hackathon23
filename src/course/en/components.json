@@ -58,7 +58,7 @@
         "_component": "accordion",
         "_classes": "",
         "_layout": "full",
-        "title": "Accordion",
+        "title": "Examples of Digital Identities",
         "displayTitle": "Examples of Digital Identities",
         "body": "Digital identity is not a one-size-fits-all proposition. Depending on the use case, a digital identity may be comprised of different attributes.",
         "instruction": "Click the tabs below to learn about different forms of digital identity.",
@@ -107,61 +107,12 @@
         "_id": "c-05",
         "_parentId": "b-04",
         "_type": "component",
-        "_component": "narrative",
+        "_component": "text",
         "_classes": "",
         "_layout": "full",
         "title": "Auth0 and Identity",
         "displayTitle": "Auth0 and Identity",
-        "body": "In this section, you will learn more about the complexities of identity, the open standards used in the identity sphere, and Auth0's role as an identity solution.",
-        "instruction": "Select the forward arrows to move through the narrative on a desktop, or swipe the images and select the plus icons to do so on mobile.",
-        "mobileInstruction": "This is optional instruction text that will be shown when viewed on mobile.",
-        "_hasNavigationInTextArea": false,
-        "_comment": "setCompletionOn = inview | allItems",
-        "_setCompletionOn": "allItems",
-        "_isTextBelowImage": false,
-        "_isMobileTextBelowImage": false,
-        "_items": [
-            {
-                "title": "Why Is Identity Important?",
-                "body": "<p>Identity is important because it is at the core of most transactions handled online. It cuts across all layers of a business, and if something goes wrong, it could be catastrophic. In addition, it's an essential function that users have come to expect in an online experience. If they can't easily log in, they may immediately opt for a competitor without even considering your product.</p>",
-                "_graphic": {
-                    "src": "course/en/images/identity-important.png",
-                    "alt": "Auth0's Universal Login box on mobile phone",
-                    "attribution": ""
-                },
-                "strapline": "Narrative item 1 strapline"
-            },
-            {
-                "title": "Why Is Identity Challenging?",
-                "body": "<p>Many different factors come into play when building an application. There are different types of resources that are exposed in different ways, and different languages and frameworks used to connect websites and apps to various APIs. From a developer's perspective, this is a huge amount of work. Minor differences in the development stack could lead to huge differences in the code you have to write.</p><p>In addition, there are lots of different forms that digital identities can take, and each identity may have different attributes associated with it.</p><p>Finally, there is the security aspect of customer identity. <b>Bad actors</b> may try to gain valuable identity information about a user. From a business perspective, maintaining customer <b>trust</b> is of utmost importance to the relationship with the customer. Without trust, they may choose not to move forward with any aspect of the business.</p>",
-                "_graphic": {
-                    "src": "course/en/images/identity-challenging.jpg",
-                    "alt": "People working on computers in open concept office",
-                    "attribution": ""
-                },
-                "strapline": "Narrative item 2 strapline"
-            },
-            {
-                "title": "Auth0 and Open Standards",
-                "body": "<p>Auth0 is implemented using <b>open standards</b>. These are agreements, developed in collaboration with major players in the industry, which may be freely implemented by anyone. Using common specifications means that developers can build compatible software. In addition, choosing a vendor does not lock you in to using that vendor forever–you could choose to implement the spec yourself or move to an alternate vendor at any time.</p><p>The most common <b>protocols</b> you will hear about in the customer identity space are <b>OpenID Connect</b> and <b>OAuth 2.0</b>. OpenID Connect, or OIDC, is used for signing in. It covers user authentication scenarios. OAuth 2.0 is used for authorization, specifically authorizing calls to an API on behalf of a given user.</p><p>These protocols both use tokens which may be defined by the <b>JSON Web Token</b>, or <b>JWT</b> (pronounced \"jot\"), specification. Auth0's implementation uses this format for all tokens, though it is not an OAuth requirement for access tokens.</p><p>You may also hear about <b>SAML</b>. This is a somewhat older open standard used for Single Sign On across domains. Auth0 supports SAML and allows your application to connect to SAML identity providers or act as a SAML identity provider.</p>",
-                "_graphic": {
-                    "src": "course/en/images/protocols.jpg",
-                    "alt": "Laptop computer displaying code",
-                    "attribution": ""
-                },
-                "strapline": "Narrative item 3 strapline"
-            }, 
-            {
-                "title": "Why Choose Auth0 as an Identity Solution?",
-                "body": "<p>The open standards are long, dense, and highly technical. Auth0 abstracts away complexity so that developers can confidently implement an identity solution quickly and easily. Auth0's SDKs and APIs work with any application type, from native apps to web apps to backend services. Developers integrate their applications with Auth0, and then Auth0 handles the connection with identity providers for them, simplifying the development work necessary to launch an identity solution.</p><p>Beyond the ease of implementation, Auth0 protects end users. It takes care of maintaining the infrastructure that secures user credentials. This eliminates a significant volume of malicious traffic to the application infrastructure. Additional security product features can be enabled simply by toggling a switch for attack protection or multi-factor authentication.</p><p>From the end user's perspective, Auth0 offers a consistent, easy-to-use interface with Universal Login. This customizable login box is simple and secure. It's easy to implement with your company's colors and logo, as well as different login options including username and password or your chosen identity providers such as Google or Facebook. Behind the scenes, product features can be enabled just by toggling a switch to provide attack protection and multi-factor authentication. These features leverage machine learning and cloud-scale signals to protect against modern security attacks.</p>",
-                "_graphic": {
-                    "src": "course/en/images/auth0-homepage.png",
-                    "alt": "Auth0 homepage displayed on a screen",
-                    "attribution": ""
-                },
-                "strapline": "Narrative item 4 strapline"
-            }
-        ],
+        "body": "<p><i>In this section, you will learn more about the complexities of identity, the open standards used in the identity sphere, and Auth0's role as an identity solution.</i></p><h3>Why Is Identity Important?</h3><p>Identity is important because it is at the core of most transactions handled online. It cuts across all layers of a business, and if something goes wrong, it could be catastrophic. In addition, it's an essential function that users have come to expect in an online experience. If they can't easily log in, they may immediately opt for a competitor without even considering your product.</p><h3>Why Is Identity Challenging?</h3><p>Many different factors come into play when building an application. There are different types of resources that are exposed in different ways, and different languages and frameworks used to connect websites and apps to various APIs. From a developer's perspective, this is a huge amount of work. Minor differences in the development stack could lead to huge differences in the code you have to write.</p><p>In addition, there are lots of different forms that digital identities can take, and each identity may have different attributes associated with it.</p><p>Finally, there is the security aspect of customer identity. <b>Bad actors</b> may try to gain valuable identity information about a user. From a business perspective, maintaining customer <b>trust</b> is of utmost importance to the relationship with the customer. Without trust, they may choose not to move forward with any aspect of the business.</p><h3>Auth0 and Open Standards</h3><p>Auth0 is implemented using <b>open standards</b>. These are agreements, developed in collaboration with major players in the industry, which may be freely implemented by anyone. Using common specifications means that developers can build compatible software. In addition, choosing a vendor does not lock you in to using that vendor forever–you could choose to implement the spec yourself or move to an alternate vendor at any time.</p><p>The most common <b>protocols</b> you will hear about in the customer identity space are <b>OpenID Connect</b> and <b>OAuth 2.0</b>. OpenID Connect, or OIDC, is used for signing in. It covers user authentication scenarios. OAuth 2.0 is used for authorization, specifically authorizing calls to an API on behalf of a given user.</p><p>These protocols both use tokens which may be defined by the <b>JSON Web Token</b>, or <b>JWT</b> (pronounced \"jot\"), specification. Auth0's implementation uses this format for all tokens, though it is not an OAuth requirement for access tokens.</p><p>You may also hear about <b>SAML</b>. This is a somewhat older open standard used for Single Sign On across domains. Auth0 supports SAML and allows your application to connect to SAML identity providers or act as a SAML identity provider.</p><h3>Why Choose Auth0 as an Identity Solution?</h3><p>The open standards are long, dense, and highly technical. Auth0 abstracts away complexity so that developers can confidently implement an identity solution quickly and easily. Auth0's SDKs and APIs work with any application type, from native apps to web apps to backend services. Developers integrate their applications with Auth0, and then Auth0 handles the connection with identity providers for them, simplifying the development work necessary to launch an identity solution.</p><p>Beyond the ease of implementation, Auth0 protects end users. It takes care of maintaining the infrastructure that secures user credentials. This eliminates a significant volume of malicious traffic to the application infrastructure. Additional security product features can be enabled simply by toggling a switch for attack protection or multi-factor authentication.</p><p>From the end user's perspective, Auth0 offers a consistent, easy-to-use interface with Universal Login. This customizable login box is simple and secure. It's easy to implement with your company's colors and logo, as well as different login options including username and password or your chosen identity providers such as Google or Facebook. Behind the scenes, product features can be enabled just by toggling a switch to provide attack protection and multi-factor authentication. These features leverage machine learning and cloud-scale signals to protect against modern security attacks.</p>",
         "_pageLevelProgress": {
             "_isEnabled": true
         }
