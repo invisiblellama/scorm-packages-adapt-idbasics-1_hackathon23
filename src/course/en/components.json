@@ -72,10 +72,8 @@
               "body": "<p>A customer's identity consists of the following pieces of information: <ul><li>Name</li><li>Email</li><li>Credit card number</li><li>Billing address</li></ul></p>",
               "_graphic": {
                   "src": "course/en/images/map_indigo.png",
-                  "alt": "Indigo map icon",
-                  "attribution": ""
+                  "alt": "Indigo map icon"
               },
-              "_comment": "Supported classes = 'align-image-left' | 'align-image-right'. Additional classes can be used but they must be predefined in one of the Less files",
               "_classes": "align-image-right"
             },
             {
@@ -83,8 +81,7 @@
               "body": "<p>A customer's digital identity in a given state may include:<ul><li>Resident's name</li><li>Home address</li><li>Driver's license number</li><li>Government identity number</li></ul></p>",
               "_graphic": {
                   "src": "course/en/images/credential-user_indigo.png",
-                  "alt": "Indigo map icon",
-                  "attribution": ""
+                  "alt": "Indigo map icon"
               },
               "_classes": "align-image-left"
             },
