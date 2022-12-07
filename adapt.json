@@ -19,7 +19,7 @@
         "adapt-contrib-pageLevelProgress": "*",
         "adapt-contrib-resources": "*",
         "adapt-contrib-slider": "*",
-        "adapt-contrib-spoor": "5.3.0",
+        "adapt-contrib-spoor": "*",
         "adapt-contrib-bookmarking": "*",
         "adapt-contrib-languagePicker": "*"
     }
