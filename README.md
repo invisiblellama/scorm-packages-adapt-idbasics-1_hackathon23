@@ -2,6 +2,7 @@
 
 # SCORM Package Adapt ID Basics 1
 
+
 ### Requirements
 
 This project assumes the user is using [Visual Studio Code](https://code.visualstudio.com/download) and [Docker Desktop](https://www.docker.com/products/docker-desktop).
@@ -81,3 +82,4 @@ If you have found a bug or if you have a feature request, please report them at 
 ---
 
 This project is licensed under the MIT license. See the [LICENSE](LICENSE) file for more info.
+
