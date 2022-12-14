@@ -2,7 +2,6 @@
 
 # SCORM Package Adapt ID Basics 1
 
-
 ### Requirements
 
 This project assumes the user is using [Visual Studio Code](https://code.visualstudio.com/download) and [Docker Desktop](https://www.docker.com/products/docker-desktop).
@@ -41,7 +40,7 @@ This will build an image containing all the tools needed to work on this project
 
 ### Getting Started - Local
 
-To get started using this lab, ensure you have met the minimum [requirements](#requirements) and then follow these steps.
+To get started using this lab, ensure you have met the minimum [requirements](#requirements) and then follow these steps
 
 1. Clone this repository to your local machine.
    ```bash
@@ -82,4 +81,3 @@ If you have found a bug or if you have a feature request, please report them at 
 ---
 
 This project is licensed under the MIT license. See the [LICENSE](LICENSE) file for more info.
-
