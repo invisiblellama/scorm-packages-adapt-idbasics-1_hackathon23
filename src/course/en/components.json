@@ -180,9 +180,9 @@
         ],
         "_feedback": {
             "title": "Feedback",
-            "correct": "<strong>Correct! CIAM stands for customer identity and access management.</strong> ",
+            "correct": "<strong>Correct!</strong> CIAM stands for customer identity and access management. ",
             "_incorrect": {
-                "final": "<strong>Incorrect, CIAM stands for Customer Identity and Access Management</strong> "
+                "final": "<strong>Incorrect</strong>, CIAM stands for Customer Identity and Access Management "
             }
         },
         "_pageLevelProgress": {
@@ -224,9 +224,9 @@
         ],
         "_feedback": {
             "title": "Feedback",
-            "correct": "<strong>Correct! OIDC deals with authentication.</strong> ",
+            "correct": "<strong>Correct!</strong> OIDC deals with authentication. ",
             "_incorrect": {
-                "final": "<strong>Incorrect, that spec is not primarily used for authentication.</strong> "
+                "final": "<strong>Incorrect</strong>, that spec is not primarily used for authentication. "
             }
         },
         "_pageLevelProgress": {
