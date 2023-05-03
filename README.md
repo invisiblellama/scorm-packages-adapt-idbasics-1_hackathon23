@@ -74,7 +74,7 @@ If you have found a bug or if you have a feature request, please report them at 
 
 ---
 
-[Auth0](https://auth0.com)
+[Auth0](https://auth0.com) !
 
 ### License
 
